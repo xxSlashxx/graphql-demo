@@ -14,7 +14,7 @@ import java.math.BigDecimal;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-@SpringBootTest()
+@SpringBootTest
 @ActiveProfiles("test")
 @Transactional
 @AutoConfigureHttpGraphQlTester
@@ -43,5 +43,34 @@ class ProductControllerIT {
         assertEquals(2L, product.getId());
         assertEquals("The Dark Forest", product.getName());
         assertEquals(BigDecimal.valueOf(10.99), product.getPrice());
+    }
+
+    @Test
+    void createProduct() {
+        Long id = httpGraphQlTester.document("mutation CreateProduct {" +
+                        "    createProduct(productDTO: { name: \"Clean Code\", price: \"29.99\" })" +
+                        "}")
+                .execute()
+                .errors()
+                .verify()
+                .path("createProduct")
+                .entity(Long.class)
+                .get();
+        assertNotNull(id);
+    }
+
+    @Test
+    void deleteProduct() {
+        Long id = httpGraphQlTester.document("mutation DeleteProduct {" +
+                        "    deleteProduct(id: \"1\")" +
+                        "}")
+                .execute()
+                .errors()
+                .verify()
+                .path("deleteProduct")
+                .entity(Long.class)
+                .get();
+        assertNotNull(id);
+        assertEquals(1L, id);
     }
 }
