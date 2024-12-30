@@ -1,3 +1,4 @@
+![build status](https://github.com/xxSlashxx/graphql-demo/actions/workflows/maven.yml/badge.svg)
 # GraphQL-Demo
 
 ## Overview
