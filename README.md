@@ -1,4 +1,5 @@
 ![build status](https://github.com/xxSlashxx/graphql-demo/actions/workflows/maven.yml/badge.svg)
+![Coverage](.github/badges/jacoco.svg)
 # GraphQL-Demo
 
 ## Overview
