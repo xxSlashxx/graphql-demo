@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: de.slash.productsservice.ProductControllerIT
--------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.509 s -- in de.slash.productsservice.ProductControllerIT
