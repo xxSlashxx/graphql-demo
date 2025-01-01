@@ -46,6 +46,24 @@ class ProductControllerIT {
     }
 
     @Test
+    void getProductWithInvalidId() {
+        httpGraphQlTester.document(
+                        "query GetProduct {" +
+                                "    getProduct(id: \"-1\") {" +
+                                "        id" +
+                                "        name" +
+                                "        price" +
+                                "    }" +
+                                "}")
+                .execute()
+                .errors()
+                .expect(responseError -> responseError.getMessage().equals("Product with id -1 not found."))
+                .verify()
+                .path("getProduct")
+                .valueIsNull();
+    }
+
+    @Test
     void createProduct() {
         Long id = httpGraphQlTester.document("mutation CreateProduct {" +
                         "    createProduct(productDTO: { name: \"Clean Code\", price: \"29.99\" })" +
