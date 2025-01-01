@@ -1,0 +1,9 @@
+de/slash/productsservice/system/ExceptionResolver.class
+de/slash/productsservice/ProductsServiceApp.class
+de/slash/productsservice/product/ProductDTO.class
+de/slash/productsservice/system/GraphQlConfig.class
+de/slash/productsservice/app/ProductController.class
+de/slash/productsservice/product/ProductService.class
+de/slash/productsservice/product/ProductRepository.class
+de/slash/productsservice/product/Product.class
+de/slash/productsservice/product/ProductNotFoundException.class

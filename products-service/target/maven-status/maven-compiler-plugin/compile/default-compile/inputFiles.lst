@@ -1,0 +1,9 @@
+/home/runner/work/graphql-demo/graphql-demo/products-service/src/main/java/de/slash/productsservice/ProductsServiceApp.java
+/home/runner/work/graphql-demo/graphql-demo/products-service/src/main/java/de/slash/productsservice/app/ProductController.java
+/home/runner/work/graphql-demo/graphql-demo/products-service/src/main/java/de/slash/productsservice/product/Product.java
+/home/runner/work/graphql-demo/graphql-demo/products-service/src/main/java/de/slash/productsservice/product/ProductDTO.java
+/home/runner/work/graphql-demo/graphql-demo/products-service/src/main/java/de/slash/productsservice/product/ProductNotFoundException.java
+/home/runner/work/graphql-demo/graphql-demo/products-service/src/main/java/de/slash/productsservice/product/ProductRepository.java
+/home/runner/work/graphql-demo/graphql-demo/products-service/src/main/java/de/slash/productsservice/product/ProductService.java
+/home/runner/work/graphql-demo/graphql-demo/products-service/src/main/java/de/slash/productsservice/system/ExceptionResolver.java
+/home/runner/work/graphql-demo/graphql-demo/products-service/src/main/java/de/slash/productsservice/system/GraphQlConfig.java
