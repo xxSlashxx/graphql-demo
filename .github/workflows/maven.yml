@@ -37,9 +37,6 @@ jobs:
       uses: cicirello/jacoco-badge-generator@v2
       with:
         jacoco-csv-file: '**/jacoco.csv'
-    - name: Log directory
-      run: |
-        ls -l
     - name: Commit the badge (if it changed)
       run: |
         if [[ `git status --porcelain` ]]; then
