@@ -57,7 +57,7 @@ class ProductControllerIT {
                                 "}")
                 .execute()
                 .errors()
-                .expect(responseError -> responseError.getMessage().equals("Product with id -1 not found."))
+                .expect(responseError -> "Product with id -1 not found.".equals(responseError.getMessage()))
                 .verify()
                 .path("getProduct")
                 .valueIsNull();
