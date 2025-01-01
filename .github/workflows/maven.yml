@@ -39,7 +39,7 @@ jobs:
         jacoco-csv-file: '**/jacoco.csv'
     - name: Log directory
       run: |
-        echo ls -l
+        ls -l
     - name: Commit the badge (if it changed)
       run: |
         if [[ `git status --porcelain` ]]; then
