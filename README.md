@@ -1,5 +1,5 @@
 ![build status](https://github.com/xxSlashxx/graphql-demo/actions/workflows/maven.yml/badge.svg)
-![Coverage](.github/badges/jacoco.svg)
+[![codecov](https://codecov.io/github/xxSlashxx/graphql-demo/graph/badge.svg?token=WZC3V5NXZ3)](https://codecov.io/github/xxSlashxx/graphql-demo)
 # GraphQL-Demo
 
 ## Overview
